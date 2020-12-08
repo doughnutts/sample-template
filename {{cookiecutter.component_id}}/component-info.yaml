@@ -5,6 +5,7 @@ metadata:
   description: {{cookiecutter.description | jsonify}}
   annotations:
     sonarqube.org/project-key: com.singtel.digital.core:logging
+    jenkins.io/github-folder: test-folder/test-job
     github.com/project-slug: {{cookiecutter.storePath | jsonify}}
     backstage.io/techdocs-ref: github:https://github.com/{{cookiecutter.storePath}}
 spec:
