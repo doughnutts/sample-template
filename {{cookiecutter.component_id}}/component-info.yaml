@@ -3,6 +3,9 @@ kind: Component
 metadata:
   name: {{cookiecutter.component_id | jsonify}}
   description: {{cookiecutter.description | jsonify}}
+  tags:
+    - java
+    - springboot
   annotations:
     sonarqube.org/project-key: com.singtel.digital.core:logging
     jenkins.io/github-folder: test-folder/test-job
@@ -12,3 +15,5 @@ spec:
   type: service
   lifecycle: experimental
   owner: {{cookiecutter.owner | jsonify}}
+  implementApis:
+    - sample-api
