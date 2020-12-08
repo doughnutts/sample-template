@@ -4,6 +4,7 @@ metadata:
   name: {{cookiecutter.component_id | jsonify}}
   description: {{cookiecutter.description | jsonify}}
   annotations:
+    sonarqube.org/project-key: com.singtel.digital.core:logging
     github.com/project-slug: {{cookiecutter.storePath | jsonify}}
     backstage.io/techdocs-ref: github:https://github.com/{{cookiecutter.storePath}}
 spec:
